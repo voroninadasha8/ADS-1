@@ -4,7 +4,18 @@
 
 
 bool checkPrime(uint64_t value) {
-// вставьте код функции
+  uint64_t i = 2;
+  if (value > 1) {
+    for (i; i<= sqrt(value); i++) {
+      if (value % i == 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  } else {
+    return false;
+  }
 }
 
 uint64_t nPrime(uint64_t n) {
